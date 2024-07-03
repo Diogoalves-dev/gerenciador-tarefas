@@ -1,0 +1,6 @@
+pré-requisitos: Visual Studio Code e Node.js
+
+como utilizar: 
+
+Após armazenar o repositório localmente, abra o mesmo no visual studio code, em seguida abra o terminal integrado da IDE e redirecione ele para o diretório src/ArquivosJson.
+Em seguida (ainda no terminal) execute o seguinte comando "npm install". Concluída a instalação execute o código "npm run api", mas antes certifique-se que o terminal ainda esta apontado à pasta "ArquivosJson", após seguir estes passos, a aplicação funcionará normalmente.

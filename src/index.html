@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de tarefas</title>
+    <link rel="stylesheet" href="./estilos/estilo.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Tarefas</h1>
+        <input type="text" id="pesquisa" onkeyup="pesquisarTarefas()" placeholder="Pesquise por titulo">
+    </header>
+    <main>
+        <section id="tarefa">
+            <h2>Tarefas <button onclick="ativarfomulario()">Nova Tarefa</button></h2>
+            <h5 id="zeroTarefas">Nenhuma tarefa foi inserida</h5>
+            <div>
+                <ul id="lista">
+                    
+                </ul>
+            </div>
+        </section>
+        
+
+        <section id="overlay" onclick="desativarformulario()"></section>
+        <div id="modal">               
+            <form onsubmit="novaTarefa()">
+                <h2>Criar Nova Tarefa <box-icon name='x-circle' onclick="desativarformulario()"></box-icon></h2>
+
+                <label for="nome_tarefa">Nome:</label>
+                <input type="text" id="nome_tarefa" required>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" required></textarea>
+
+                <button type="submit" value="submit">Adicionar</button>
+
+            </form>
+        </div>
+        
+    </main>
+
+    <footer></footer>
+
+    <script src="./ArquivosJS/index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
